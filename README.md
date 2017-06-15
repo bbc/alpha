@@ -29,7 +29,7 @@ the changes you’ve made and a member of the development team will take a look.
 This is an open source project which is actively maintained and developed
 by a team within Design and Engineering. Please bear in mind the following:—
 
-* Bugs and feature requests **must** be filed in [GitHub Issues](https://github.com/alpha/anansi/issues): this is the authoratitive list of backlog tasks.
+* Bugs and feature requests **must** be filed in [GitHub Issues](https://github.com/bbc/alpha/issues): this is the authoratitive list of backlog tasks.
 * [Forking](https://github.com/bbc/alpha.bbc/fork) is encouraged! See the “[Contributing](#contributing)” section.
 
 ## License
