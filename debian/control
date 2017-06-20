@@ -1,0 +1,30 @@
+Source: alpha
+Section: web
+Priority: extra
+Maintainer: Mo McRoberts <mo.mcroberts@bbc.co.uk>
+Standards-Version: 3.9.3
+Homepage: https://github.com/bbc/alpha
+Vcs-Browser: https://github.com/bbc/alpha
+Vcs-Git: git://github.com/bbc/alpha.git
+Build-Depends: debhelper (>= 8.0.0), autoconf, automake
+
+Package: bbcalpha-experience
+Architecture: any
+Depends: ${misc:Depends}, bbcalpha-experience-static
+Suggests: bbcalpha-boilerplate
+Description: BBC Alpha - Experience layer (dynamic resources)
+
+Package: bbcalpha-experience-static
+Architecture: any
+Depends: ${misc:Depends}
+Description: BBC Alpha - Experience layer (static resources)
+
+Package: bbcalpha-boilerplate
+Architecture: any
+Depends: ${misc:Depends}, bbcalpha-boilerplate-static
+Description: BBC Alpha - Boilerplate component (dynamic resources)
+
+Package: bbcalpha-boilerplate-static
+Architecture: any
+Depends: ${misc:Depends}
+Description: BBC Alpha - Boilerplate component (static resources)

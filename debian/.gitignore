@@ -1,0 +1,9 @@
+*.substvars
+*.log
+*.debhelper
+/files
+/tmp
+/anansi
+/libcrawl
+/libcrawl-dev
+
