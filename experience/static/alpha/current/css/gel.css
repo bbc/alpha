@@ -1,0 +1,167 @@
+/*
+ * Author: Mo McRoberts <mo.mcroberts@bbc.co.uk>
+ *
+ * Copyright (c) 2017 BBC
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
+
+html {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+body {
+    margin: 0;
+    padding:; 0;
+    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height 1;
+    font-size: 10px;
+    color: #404040;
+}
+a:link, a:visited {
+    color: inherit;
+    text-decoration: inherit;
+}
+a:hover, a:active {
+    color: inherit;
+    text-decoration: underline;
+}
+img {
+    border: none;
+}
+
+body>header {
+    font-family: 'Reith Sans', Helmet, Freesans, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0 12px;
+    border-bottom: solid #ccc 1px;
+    font-size: 13px;
+    line-height: 2.4615;
+    width: 100%;
+    overflow: hidden;
+}
+body>footer {
+    font-family: 'Reith Sans', Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-size: 1.3em;
+    margin: 0;
+    background: #4c4c4c;
+    color: #fff;
+    padding: 16px;
+    line-height: 1.4;
+    overflow: hidden;
+}
+body>header *, body>footer * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body>header .blocks a {
+    display: block;
+    padding: 8px 12px 8px 0;
+}
+
+body>header .blocks img {
+    display: block;
+}
+body>header.warning {
+    background: #000;
+    color: #fff;
+}
+body>footer ul, body>footer p {
+    display: block;
+    margin: 1em 0;
+}
+body>footer li {
+    display: inline;
+}
+body>footer li>a {
+    padding-right: 2em;
+    white-space: nowrap;
+    line-height: 2;
+}
+body>footer p a:link, body>footer p a:visited {
+    text-decoration: underline;
+}
+body>footer small {
+    font-size: inherit;
+    color: #d0d0d0;
+}
+a.definition {
+    cursor: help;
+}
+body>main {
+    padding: 0 16px;
+    font-size: 1.3em;
+}
+body>main h1 {
+    font-family: 'Reith Sans', Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 2.125rem;
+}
+body>main h2 {
+    font-family: 'Reith Sans', Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 1.3125rem;
+}
+@media (max-width: 1023px) {
+    body>footer li {
+        display: inline-block;
+    }
+    body>footer li>a {
+        display: block;
+    }
+}
+@media (min-width: 700px) and (max-width: 1023px) {
+    body>footer li>a {
+        min-width: 20vw;
+    }    
+    body>footer ul {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }    
+}
+
+
+@media (min-width: 400px) and (max-width: 699px) {
+    body>footer li>a {
+        min-width: 24vw;
+    }
+    body>footer ul {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }    
+}
+
+@media (min-width: 300px) and (max-width: 399px) {
+    body>footer li>a {
+        min-width: 33vw;
+    }
+    body>footer ul {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }    
+}
+
+@media (max-width: 300px) {
+    body>footer ul {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }    
+}

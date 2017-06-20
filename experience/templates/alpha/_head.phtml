@@ -1,0 +1,19 @@
+<?php
+
+$classes = _e(implode(' ', $page->classes));
+
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="<?php e(css('gel.css')); ?>">
+        <link rel="stylesheet" href="<?php e(css('alpha.css'));?>">
+        <title>BBC Alpha<?php if(strlen($page->title)) echo ' • ' . $page->title; ?></title>
+    </head>
+    <body class="<?php echo $classes; ?>">
+        <header role="banner" aria-label="BBC">
+            <p class="blocks"><a href="/" title="BBC homepage"><img src="<?php e(img('bbca-blocks-dark@1x.png')); ?>" srcset="<?php e(img('bbca-blocks-dark@2x.png')); ?> 2x" alt="BBC Alpha"></a></p>
+        </header>
