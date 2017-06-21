@@ -10,7 +10,7 @@ Build-Depends: debhelper (>= 8.0.0), autoconf, automake
 
 Package: bbcalpha-experience
 Architecture: any
-Depends: ${misc:Depends}, bbcalpha-experience-static
+Depends: ${misc:Depends}, bbcalpha-experience-static (= ${binary:Version})
 Suggests: bbcalpha-boilerplate
 Description: BBC Alpha - Experience layer (dynamic resources)
 
@@ -21,7 +21,7 @@ Description: BBC Alpha - Experience layer (static resources)
 
 Package: bbcalpha-boilerplate
 Architecture: any
-Depends: ${misc:Depends}, bbcalpha-boilerplate-static
+Depends: ${misc:Depends}, bbcalpha-boilerplate-static (= ${binary:Version})
 Description: BBC Alpha - Boilerplate component (dynamic resources)
 
 Package: bbcalpha-boilerplate-static
