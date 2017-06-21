@@ -3,7 +3,5 @@
 *.debhelper
 /files
 /tmp
-/anansi
-/libcrawl
-/libcrawl-dev
+/bbcalpha-*
 
