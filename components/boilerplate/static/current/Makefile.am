@@ -14,5 +14,8 @@
 ##  See the License for the specific language governing permissions and
 ##  limitations under the License.
 
-SUBDIRS = css img
+SUBDIRS = css img js fonts
 
+install-data-hook:
+	@echo " ${MKDIR_P} '$(DESTDIR)${compstaticdir}'" ; \
+		${MKDIR_P} '$(DESTDIR)${compstaticdir}' || exit 1

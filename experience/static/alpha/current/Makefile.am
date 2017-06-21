@@ -15,3 +15,7 @@
 ##  limitations under the License.
 
 SUBDIRS = css js img fonts
+
+install-data-hook:
+	@echo " $(MKDIR_P) '$(DESTDIR)${webstaticdir}/${PACKAGE}/${VERSION}'" ; \
+		$(MKDIR_P) '$(DESTDIR)${webstaticdir}/${PACKAGE}/${VERSION}' || exit 1
