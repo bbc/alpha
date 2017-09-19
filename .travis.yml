@@ -5,7 +5,7 @@ php:
 - '5.6'
 - '7.0'
 - '7.1'
-- 'nightly'
+- nightly
 before_script:
 - autoreconf -f -i
 script:
@@ -18,3 +18,6 @@ addons:
 branches:
   except:
   - master
+notifications:
+  slack:
+    secure: PYPowtZ04pWp+MD+fcd8vnYuzqOx+czaQX35O2juRNq5o+/OnpNE1arQtBO07AjOJjqxJ8U9t7gVdCzvljQhc7Hgt+kiZ147ifbKfgCFC3yKrDA8EbuWmod0Grl2PK0NDbBdslEAZO90VhqaJgUxPA8FppLhJb3oo7/BupuesbNPU7ENRW5Ga+GwzNUm1I9n2kZXFUeREYebma+w3lBApkYe72EPq1jvKLl9M118YYGN9h20ElLlWeEJ63Jbw86kbnRsgck8wa1QgS8rzcrqvH6YzW7j+am6Ny5INXq4ISlZcmEt6UApnRdrIJfxLCJutXcIE2qGDsawHGNzE7WKXIt3o8tub8O1JpVPOeqbvTM1fbH0NpAHC70ntgn35Ix72o/KGyx/Kn+abApADbZg0WqH2PD8lnaEs3kC8OI+hJzcthZMFVMQCv4o9bfaoTzCPBsSGXD6U9fRtkEyv96uFTKmq7yQadqetPgR/+PN9+1kmV8VctbBK2vDBHeUU3mP74sVjukJLIUsJhlQvkymm3X7tyYqBmHjtWpcTFfp0sZUTNwO57L2gOgO+/2bkk5cNcms9HvJq+6GPl3xuHHl3chMmjLOfOvK/Ek6OlSEjh7LYIg3NHP+winKmApkFKtDSHTefLhbbdknIIJ5zY7a14RX/NceMEnmddd9OSL0zKg=
